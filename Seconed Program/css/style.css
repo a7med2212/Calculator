@@ -14,12 +14,15 @@ body {
 text-align: center;
 }
 
+.container h1 {
+    margin: 0 20px;
+}
 
 .container h2 {
-    margin-bottom: 50px;
+    margin: 0 20px 50px;
 }
 .container h2:last-child {
-    margin-bottom: 0;
+    margin: 0 20px;
 
 }
 nav {
@@ -64,6 +67,7 @@ button:hover {
     width: 75%;
     margin: auto;
     justify-content: center;
+    text-align: center;
 }
 
 section {
@@ -89,4 +93,16 @@ input {
 button:first-child,
 input:first-child {
     margin-top: 0;
+}
+
+
+@media (max-width: 600px){
+    button,
+    input {
+        width: 125px ;
+    }
+
+    section button {
+        width: 140px;
+    }
 }
